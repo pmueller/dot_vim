@@ -18,12 +18,6 @@ let g:syntastic_mode_map = { 'mode': 'passive',
                            \ 'active_filetypes': ['ruby'],
                            \ 'passive_filetypes': ['scss'] }
 
-" Platform-specific config files
-if has('win32') || has('win64')
-  let g:syntastic_jsl_conf=$HOME.'/.vim/config/windows/syntastic/jsl.conf'
-  let g:syntastic_disabled_filetypes=['sh'] " Disable .sh on Windows
-endif
-
 " ---------------
 " NERDTree
 " ---------------
@@ -71,10 +65,7 @@ let g:ctrlp_max_height = 10
 " ---------------
 " Powerline
 " ---------------
-" Keep ^B from showing on Windows in Powerline
-if has('win32') || has('win64')
-  let g:Powerline_symbols = 'compatible'
-elseif has('gui_macvim')
+if has('gui_macvim')
   let g:Powerline_symbols = 'fancy'
 endif
 
@@ -83,12 +74,6 @@ try
 catch
   " nothing
 endtry
-
-" ---------------
-" jellybeans.vim colorscheme tweaks
-" ---------------
-" Make cssAttrs (center, block, etc.) the same color as units
-hi! link cssAttr Constant
 
 " ---------------
 " surround.vim
@@ -124,12 +109,6 @@ let g:mta_filetypes = {
     \ 'xml' : 1,
     \ 'handlebars' : 1,
     \}
-
-" ---------------
-" YouCompleteMe
-" ---------------
-let g:ycm_complete_in_comments_and_strings=0
-let g:ycm_collect_identifiers_from_comments_and_strings=0
 
 " ---------------
 " vim-signify

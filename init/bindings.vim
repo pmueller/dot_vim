@@ -80,12 +80,6 @@ map <leader>f   :CtrlP<CR>
 map <D-N>       :CtrlP<CR>
 map <C-p>       :CtrlP<CR>
 
-" Command T
-"map <leader>e   :CommandT<CR>
-"map <leader>f   :CommandT<CR>
-"map <D-N>       :CommandT<CR>
-"map <C-p>       :CommandT<CR>
-
 " ctags with rails load path
 map <leader>rt  :!rails runner 'puts $LOAD_PATH.join(" ")' \| xargs /usr/local/bin/ctags -R app/assets/javascripts<CR>
 map <leader>T   :!rails runner 'puts $LOAD_PATH.join(" ")' \| xargs rdoc -f tags<CR>

@@ -5,25 +5,15 @@
 " ---------------
 " Color
 " ---------------
-" Turn on Solarized 256 colors if the terminal supports it.
-" (Why Solarized doesn't do this properly on its own is unknown.)
-if &t_Co == 256
-  let g:solarized_termcolors=256
-endif
-
-try
-  colorscheme Tomorrow-Night
-catch
-  " deal with it
-endtry
-
-set background=dark
+set t_Co=256
+colorscheme railscasts
+syntax enable
 
 " -----------------------------
 " Backups, Tmp Files, and Undo
 " -----------------------------
-set backup
-set backupdir=~/.vim/.backup
+set nobackup
+"set backupdir=~/.vim/.backup
 set directory=~/.vim/.tmp
 " Persistent Undo
 set undofile
@@ -36,12 +26,13 @@ set ruler          " Ruler on
 set number         " Line numbers on
 set nowrap         " Line wrapping off
 set laststatus=2   " Always show the statusline
-set cmdheight=2    " Make the command area two lines high
+set cmdheight=1    " Make the command area two lines high
 set encoding=utf-8
 set noshowmode     " Don't show the mode since Powerline shows it
 set title          " Set the title of the window in the terminal to the file
 if exists('+colorcolumn')
-  set colorcolumn=80 " Color the 80th column differently as a wrapping guide.
+  set colorcolumn=99 " Color the 80th column differently as a wrapping guide.
+  highlight ColorColumn ctermbg=745
 endif
 " Disable tooltips for hovering keywords in Vim
 if exists('+ballooneval')
@@ -106,7 +97,7 @@ set listchars=""
 " a tab should display as "~", trailing whitespace as "."
 set listchars=tab:\~\  " Indented trailing whitespace
 " show trailing spaces as dots
-set listchars+=trail:.
+"set listchars+=trail:.
 " The character to show in the last column when wrap is off and the line
 " continues beyond the right of the screen
 set listchars+=extends:>
