@@ -6,6 +6,11 @@ let mapleader = ","
 " have W write as well for shift being held too long
 command W w
 
+" more ergonomic mappings for esc
+imap jj <esc>
+imap jk <esc>
+imap kj <esc>
+
 " Shortcut to display compiled coffeescript
 command CC CoffeeCompile vert
 
