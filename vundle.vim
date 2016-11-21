@@ -18,6 +18,8 @@ Bundle 'gmarik/vundle'
 " Navigation
 Bundle 'ZoomWin'
 Bundle 'kien/ctrlp.vim'
+Bundle 'junegunn/fzf'
+Bundle 'junegunn/fzf.vim'
 "Bundle 'wincent/Command-T'
 Bundle 'vim-scripts/FuzzyFinder'
 Bundle 'tpope/vim-unimpaired'

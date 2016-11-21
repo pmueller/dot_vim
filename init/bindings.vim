@@ -79,11 +79,11 @@ map <D-e> :FufBuffer<CR>
 " refresh the FuzzyFinder cache
 map <leader>rf :FufRenewCache<CR>
 
-" Ctrl P
-map <leader>e   :CtrlP<CR>
-map <leader>f   :CtrlP<CR>
-map <D-N>       :CtrlP<CR>
-map <C-p>       :CtrlP<CR>
+" FZF
+map <leader>e   :FZF<CR>
+map <leader>f   :FZF<CR>
+map <D-N>       :FZF<CR>
+map <C-p>       :FZF<CR>
 
 " ctags with rails load path
 map <leader>rt  :!rails runner 'puts $LOAD_PATH.join(" ")' \| xargs /usr/local/bin/ctags -R app/assets/javascripts<CR>
@@ -111,11 +111,11 @@ imap <F1>           <Nop>
 " Easy access to the shell
 map <Leader><Leader> :!
 
-" AckGrep current word
-map <leader>a :call AckGrep()<CR>
+" grep current word
+map <leader>a :call AgGrep()<CR>
 
-" AckVisual current selection
-vmap <leader>a :call AckVisual()<CR>
+" grep current selection
+vmap <leader>a :call AgVisual()<CR>
 
 " Recalculate diff when it gets messed up.
 nmap du :diffupdate<CR>
