@@ -69,6 +69,8 @@ map \|          :NERDTreeFind<CR>
 " Previous/next quickfix file listings (e.g. search results)
 map <M-D-Down>  :cn<CR>
 map <M-D-Up>    :cp<CR>
+map <c-j>       :cn<CR>
+map <c-k>       :cp<CR>
 
 " Previous/next buffers
 map <M-D-Left>  :bp<CR>
