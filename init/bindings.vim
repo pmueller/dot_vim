@@ -11,6 +11,12 @@ imap jj <esc>
 imap jk <esc>
 imap kj <esc>
 
+" Remove ex mode shortcut
+nnoremap Q <nop>
+
+" Make :Q the same as :q
+cabbrev Q q
+
 " Shortcut to display compiled coffeescript
 command CC CoffeeCompile vert
 
