@@ -12,6 +12,7 @@ syntax enable
 " -----------------------------
 " Backups, Tmp Files, and Undo
 " -----------------------------
+set noswapfile
 set nobackup
 "set backupdir=~/.vim/.backup
 set directory=~/.vim/.tmp

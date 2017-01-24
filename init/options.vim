@@ -23,8 +23,6 @@ set cursorline                  " Highlight current line
 
 set laststatus=2                " Always show statusline
 
-set swapfile                    " Keep swapfiles
-
 set hls                         " search with highlights by default
 " Press Space to turn off highlighting and clear any message already
 " displayed.
