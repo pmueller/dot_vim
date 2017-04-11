@@ -138,3 +138,9 @@ let g:jekyll_post_extension = '.md'
 " ag
 " ---------
 let g:ag_prg="ag --path-to-ignore=~/.agignore --vimgrep"
+
+" ---------
+" FZF
+" ---------
+" ag will filter, which will respect agignore
+let $FZF_DEFAULT_COMMAND = 'ag -l -g ""'
