@@ -137,4 +137,4 @@ let g:jekyll_post_extension = '.md'
 " ---------
 " ag
 " ---------
-let g:ag_prg="ag --path-to-agignore=~/.agignore --vimgrep"
+let g:ag_prg="ag --path-to-ignore=~/.agignore --vimgrep"
