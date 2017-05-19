@@ -20,25 +20,9 @@ autocmd BufWritePre *.rb,*.yml,*.js,*.css,*.less,*.sass,*.scss,*.less,*.html,*.x
 " Java, PHP
 autocmd BufWritePre *.java,*.php,*.feature silent! :StripTrailingWhiteSpace
 
-" Coffeescript
-autocmd BufWritePre *.coffee silent! :StripTrailingWhiteSpace
-
 " Python
 autocmd BufWritePre *.py silent! :StripTrailingWhiteSpace
-
-" Highlight Jasmine fixture files as HTML
-autocmd BufRead,BufNewFile *.jasmine_fixture set filetype=html
-
-" Highlight GLSL files
-au BufRead,BufNewFile *.frag,*.vert,*.fp,*.vp,*.glsl set filetype=glsl
-autocmd BufWritePre *.frag,*.vert,*.fp,*.vp,*.glsl silent! :StripTrailingWhiteSpace
 
 " Consider question/exclamation marks to be part of a Vim word.
 autocmd FileType ruby set iskeyword=@,48-57,_,?,!,192-255
 autocmd FileType scss set iskeyword=@,48-57,_,-,?,!,192-255
-
-" Insert ' => '
-autocmd FileType ruby imap  <Space>=><Space>
-
-" Open all folds in Markdown.
-autocmd FileType mkd normal zR

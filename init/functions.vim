@@ -3,14 +3,6 @@
 " ----------------------------------------
 
 " ---------------
-" Convert Ruby 1.8 hash rockets to 1.9 JSON style hashes.
-" From: http://git.io/cxmJDw
-" Note: Defaults to the entire file unless in visual mode.
-" ---------------
-command! -bar -range=% NotRocket execute
-  \'<line1>,<line2>s/:\(\w\+\)\s*=>/\1:/e' . (&gdefault ? '' : 'g')
-
-" ---------------
 " Strip Trailing White Space
 " ---------------
 " From http://vimbits.com/bits/377
@@ -65,19 +57,6 @@ endfunction
 noremap <silent> <enter> :call WriteBuffer()<CR>
 
 " Find current word in command mode
-function! AckGrep()
-  let command = "ack ".expand("<cword>")
-  cexpr system(command)
-  cw
-endfunction
-
-function! AckVisual()
-  normal gv"xy
-  let command = "ack ".@x
-  cexpr system(command)
-  cw
-endfunction
-
 function! AgGrep()
   let command = "ag ".expand("<cword>")
   cexpr system(command)

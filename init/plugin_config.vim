@@ -3,12 +3,6 @@
 " ----------------------------------------
 
 " ---------------
-" space.vim
-" ---------------
-" Disables space mappings in select mode to fix snipMate.
-let g:space_disable_select_mode=1
-
-" ---------------
 " Syntastic
 " ---------------
 let g:syntastic_check_on_open=0
@@ -28,87 +22,12 @@ let g:NERDTreeMinimalUI=1
   "\&& b:NERDTreeType == "primary") | q | endif
 
 " ---------------
-" Session
-" ---------------
-let g:session_autosave=0
-let g:session_autoload=0
-nnoremap <leader>os :OpenSession<CR>
-
-" ---------------
-" Tabular
-" ---------------
-nmap <Leader>t= :Tabularize /=<CR>
-vmap <Leader>t= :Tabularize /=<CR>
-nmap <Leader>t: :Tabularize /:\zs<CR>
-vmap <Leader>t: :Tabularize /:\zs<CR>
-nmap <Leader>t, :Tabularize /,\zs<CR>
-vmap <Leader>t, :Tabularize /,\zs<CR>
-nmap <Leader>t> :Tabularize /=>\zs<CR>
-vmap <Leader>t> :Tabularize /=>\zs<CR>
-nmap <Leader>t- :Tabularize /-<CR>
-vmap <Leader>t- :Tabularize /-<CR>
-nmap <Leader>t" :Tabularize /"<CR>
-vmap <Leader>t" :Tabularize /"<CR>
-
-" ---------------
-" ctrlp.vim
-" ---------------
-" Ensure Ctrl-P isn't bound by default
-let g:ctrlp_map = ''
-
-" Allow same file to be opened in multiple tabs
-let g:ctrlp_switch_buffer=0
-
-" Ensure max height isn't too large. (for performance)
-let g:ctrlp_max_height = 10
-
-" ---------------
-" Powerline
-" ---------------
-if has('gui_macvim')
-  let g:Powerline_symbols = 'fancy'
-endif
-
-try
-  call Pl#Theme#InsertSegment('ws_marker', 'after', 'lineinfo')
-catch
-  " nothing
-endtry
-
-" ---------------
 " surround.vim
 " ---------------
 " Use # to get a variable interpolation (inside of a string)}
 " ysiw#   Wrap the token under the cursor in #{}
 " Thanks to http://git.io/_XqKzQ
 let g:surround_35  = "#{\r}"
-
-" ---------------
-" indenthtml
-" ---------------
-" Setup indenthtml to propertly indent html. Without this, formatting doesn't
-" work on html.
-let g:html_indent_inctags = "html,body,head,tbody"
-let g:html_indent_script1 = "inc"
-let g:html_indent_style1 = "inc"
-
-" ---------------
-" Gist.vim
-" ---------------
-if has('macunix') || has('mac')
-  let g:gist_clip_command = 'pbcopy'
-endif
-let g:gist_post_private=1
-
-" ---------------
-" MatchTagAlways
-" ---------------
-let g:mta_filetypes = {
-    \ 'html' : 1,
-    \ 'xhtml' : 1,
-    \ 'xml' : 1,
-    \ 'handlebars' : 1,
-    \}
 
 " ---------------
 " vim-signify
@@ -128,11 +47,6 @@ let g:gundo_close_on_revert = 1
 " ---------
 " Turn on syntax highlighting for ruby operators (==, ||, &&, etc)
 let ruby_operators=1
-
-" ---------
-" vim-jekyll
-" ---------
-let g:jekyll_post_extension = '.md'
 
 " ---------
 " ag
