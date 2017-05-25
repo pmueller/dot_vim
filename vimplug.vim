@@ -43,6 +43,7 @@ Plug 'mxw/vim-jsx'
 Plug 'kchmck/vim-coffee-script'
 Plug 'leshill/vim-json'
 Plug 'briancollins/vim-jst'
+Plug 'posva/vim-vue'
 
 Plug 'othree/html5.vim'
 
