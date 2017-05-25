@@ -17,9 +17,6 @@ nnoremap Q <nop>
 " Make :Q the same as :q
 cabbrev Q q
 
-" Shortcut to display compiled coffeescript
-command CC CoffeeCompile vert
-
 " Shortcut to check syntax with Syntastic
 command SC SyntasticCheck
 
@@ -38,15 +35,8 @@ map <leader>=   ^W=
 map <leader>j   ^Wj
 map <leader>k   ^Wk
 
-" Open .vimrc file in new tab. Think Command + , [Preferences...] but with Shift.
-map <D-<>       :tabedit ~/.vimrc<CR>
-
 " Reload .vimrc
 map <leader>rv  :source ~/.vimrc<CR>
-
-" Undo/redo - Doesn't MacVim already have this?
-map <D-z>       :earlier 1<CR>
-map <D-Z>       :later 1<CR>
 
 " Auto-indent whole file
 nmap <leader>=  gg=G``
@@ -79,13 +69,6 @@ map <M-D-Right> :bn<CR>
 "indent/unindent visual mode selection with tab/shift+tab
 vmap <tab> >gv
 vmap <s-tab> <gv
-
-" FuzzyFinder and switchback commands
-map <leader>b   :FufBuffer<CR>
-map <D-e> :FufBuffer<CR>
-
-" refresh the FuzzyFinder cache
-map <leader>rf :FufRenewCache<CR>
 
 " FZF
 map <leader>e   :FZF<CR>
@@ -124,9 +107,6 @@ map <leader>a :call AgGrep()<CR>
 
 " grep current selection
 vmap <leader>a :call AgVisual()<CR>
-
-" Recalculate diff when it gets messed up.
-nmap du :diffupdate<CR>
 
 " Gundo.vim
 map <leader>u :GundoToggle<CR>
