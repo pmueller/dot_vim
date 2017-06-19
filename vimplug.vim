@@ -47,4 +47,8 @@ Plug 'posva/vim-vue'
 
 Plug 'othree/html5.vim'
 
+Plug 'elixir-lang/vim-elixir'
+
+Plug 'hdima/python-syntax'
+
 call plug#end()
