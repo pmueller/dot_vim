@@ -30,6 +30,7 @@ Plug 'scrooloose/syntastic'
 "Plug 'ervandew/supertab'
 " add 'end' for ruby stuff
 Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-repeat'
 
 Plug 'vim-ruby/vim-ruby'
 " also includes sass and scss
@@ -49,6 +50,8 @@ Plug 'othree/html5.vim'
 
 Plug 'elixir-lang/vim-elixir'
 
-Plug 'hdima/python-syntax'
+Plug 'fatih/vim-go'
+
+Plug 'sheerun/vim-polyglot'
 
 call plug#end()
