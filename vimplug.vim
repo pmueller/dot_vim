@@ -33,6 +33,7 @@ Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-repeat'
 
 Plug 'vim-ruby/vim-ruby'
+Plug 'vim-scripts/rainbow-end'
 " also includes sass and scss
 Plug 'tpope/vim-haml'
 Plug 'tpope/vim-rails'
