@@ -22,7 +22,7 @@ Plug 'tpope/vim-fugitive'
 " for silver searcher
 Plug 'rking/ag.vim'
 " visualize undo tree
-Plug 'sjl/gundo.vim'
+Plug 'mbbill/undotree'
 " x of y matches while searching
 Plug 'henrik/vim-indexed-search'
 " syntax checking stuff
