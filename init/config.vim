@@ -89,6 +89,8 @@ set matchtime=2 " How many tenths of a second to blink
 " Show invisible characters
 set list
 
+set noicon
+
 " Show trailing spaces as dots and carrots for extended lines.
 " From Janus, http://git.io/PLbAlw
 

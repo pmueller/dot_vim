@@ -77,8 +77,10 @@ map <D-N>       :FZF<CR>
 map <C-p>       :FZF<CR>
 
 " ctags with rails load path
-map <leader>rt  :!rails runner 'puts $LOAD_PATH.join(" ")' \| xargs /usr/local/bin/ctags -R app/assets/javascripts<CR>
-map <leader>T   :!rails runner 'puts $LOAD_PATH.join(" ")' \| xargs rdoc -f tags<CR>
+"map <leader>rt  :!rails runner 'puts $LOAD_PATH.join(" ")' \| xargs /usr/local/bin/ctags -R app/assets/javascripts<CR>
+"map <leader>T   :!rails runner 'puts $LOAD_PATH.join(" ")' \| xargs rdoc -f tags<CR>
+map <leader>rt :!ctags -R --languages=ruby --exclude=.git --exclude=log .
+
 
 " Git blame
 map <leader>g   :Gblame<CR>
