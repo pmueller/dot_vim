@@ -17,9 +17,6 @@ nnoremap Q <nop>
 " Make :Q the same as :q
 cabbrev Q q
 
-" Shortcut to check syntax with Syntastic
-command SC SyntasticCheck
-
 "set pastetoggle keybinding
 set pastetoggle=<F2>
 

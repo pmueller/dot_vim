@@ -26,7 +26,9 @@ Plug 'mbbill/undotree'
 " x of y matches while searching
 Plug 'henrik/vim-indexed-search'
 " syntax checking stuff
-Plug 'scrooloose/syntastic'
+" switch to syntastic if using vim version < 8
+"Plug 'scrooloose/syntastic'
+Plug 'dense-analysis/ale'
 "Plug 'ervandew/supertab'
 " add 'end' for ruby stuff
 Plug 'tpope/vim-endwise'
