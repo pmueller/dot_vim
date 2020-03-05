@@ -34,6 +34,12 @@ Plug 'dense-analysis/ale'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-repeat'
 
+" highlight extra whitespace except in insert mode
+Plug 'ntpeters/vim-better-whitespace'
+
+" tabline has tab number and unsaved indicator
+Plug 'mkitt/tabline.vim'
+
 Plug 'vim-ruby/vim-ruby'
 Plug 'vim-scripts/rainbow-end'
 " also includes sass and scss
@@ -42,12 +48,13 @@ Plug 'tpope/vim-rails'
 Plug 'tpope/vim-rake'
 
 Plug 'pangloss/vim-javascript'
-Plug 'isRuslan/vim-es6'
-Plug 'mxw/vim-jsx'
-Plug 'kchmck/vim-coffee-script'
+"Plug 'isRuslan/vim-es6'
+"Plug 'leafgarland/typescript-vim'
+"Plug 'maxmellon/vim-jsx-pretty'
+"Plug 'kchmck/vim-coffee-script'
 Plug 'leshill/vim-json'
-Plug 'briancollins/vim-jst'
-Plug 'posva/vim-vue'
+"Plug 'briancollins/vim-jst'
+"Plug 'posva/vim-vue'
 
 Plug 'othree/html5.vim'
 
