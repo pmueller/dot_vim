@@ -43,3 +43,10 @@ let g:ag_prg="ag --path-to-ignore=~/.agignore --vimgrep"
 " ---------
 " ag will filter, which will respect agignore
 let $FZF_DEFAULT_COMMAND = 'ag -l -g ""'
+
+
+" ---------
+" Fugitive
+" ---------
+" Unset 'list' in :Gstatus window (which usually contains tab characters).
+autocmd BufReadPost .git/index set nolist

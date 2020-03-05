@@ -9,6 +9,7 @@
 " ---------------
 
 function WriteBuffer()
+  " qf is quickfix
   if &filetype == "qf"
     execute "normal! \<enter>"
   else
